@@ -24,6 +24,10 @@ public class InventoryManager : MonoBehaviour
     {
         _isShowing = !_isShowing;
         inventoryAnimator.SetBool(IsShowing, _isShowing);
+
+        if (_isShowing) Cursor.lockState = CursorLockMode.Confined;
+        else Cursor.lockState = CursorLockMode.Locked;
+
         yield return new WaitForSeconds(showAnimation.length);
         _hasAnimationEnded = true;
     }

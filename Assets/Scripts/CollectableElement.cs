@@ -1,15 +1,18 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Renderer))]
 public class CollectableElement : MonoBehaviour
 {
-    [SerializeField] private GameObject collectedObject;
     [SerializeField] private Material defaultMaterial;
     [SerializeField] private Material selectedMaterial;
 
     private Renderer _renderer;
     private bool _selected;
+
+    public GameObject CollectedObject;
+    public bool IsDragging;
 
     private void Awake()
     {
@@ -18,27 +21,30 @@ public class CollectableElement : MonoBehaviour
 
     private void Update()
     {
-        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit))
+        if (!IsDragging)
         {
-            if (hit.transform == transform)
-            {
-                _renderer.material = selectedMaterial;
-                _selected = true;
-            }
-            else
-            {
-                _renderer.material = defaultMaterial;
-                _selected = false;
-            }
-        }
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
 
-        if (Input.GetMouseButtonDown(0) && _selected)
-        {
-            gameObject.SetActive(false);
-            collectedObject.SetActive(true);
+            if (Physics.Raycast(ray, out hit))
+            {
+                if (hit.transform == transform)
+                {
+                    _renderer.material = selectedMaterial;
+                    _selected = true;
+                }
+                else
+                {
+                    _renderer.material = defaultMaterial;
+                    _selected = false;
+                }
+            }
+
+            if (Input.GetMouseButtonDown(0) && _selected)
+            {
+                CollectedObject.SetActive(true);
+                Destroy(gameObject);
+            }
         }
     }
 }

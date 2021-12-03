@@ -432,6 +432,8 @@ GameObject:
   - component: {fileID: 52625184}
   - component: {fileID: 52625186}
   - component: {fileID: 52625185}
+  - component: {fileID: 52625187}
+  - component: {fileID: 52625188}
   m_Layer: 5
   m_Name: CylinderSlot
   m_TagString: Untagged
@@ -498,6 +500,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52625183}
   m_CullTransparentMesh: 1
+--- !u!114 &52625187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52625183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 1628158122}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &52625188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52625183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ea9a746b13dbc48b19ed1f88ca561a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slotItem: {fileID: 379431325}
+  itemPrefab: {fileID: 1855986409476597547, guid: 73dde4b875a730a4e964815a54cb747d, type: 3}
 --- !u!1 &78582094
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,7 +1160,7 @@ CharacterController:
   m_Height: 4
   m_Radius: 0.7
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.001
   m_SkinWidth: 0.05
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
@@ -2544,7 +2604,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697509902}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5139,6 +5199,8 @@ GameObject:
   - component: {fileID: 1628158121}
   - component: {fileID: 1628158123}
   - component: {fileID: 1628158122}
+  - component: {fileID: 1628158124}
+  - component: {fileID: 1628158125}
   m_Layer: 5
   m_Name: CubeSlot
   m_TagString: Untagged
@@ -5205,6 +5267,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628158120}
   m_CullTransparentMesh: 1
+--- !u!114 &1628158124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628158120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 1628158122}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1628158125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628158120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ea9a746b13dbc48b19ed1f88ca561a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slotItem: {fileID: 1424475928}
+  itemPrefab: {fileID: 2063795614681925931, guid: 1a3a0cd61e048064c92f9615bba40e38, type: 3}
 --- !u!1 &1629859122
 GameObject:
   m_ObjectHideFlags: 0
@@ -6420,6 +6540,8 @@ GameObject:
   - component: {fileID: 1992210236}
   - component: {fileID: 1992210238}
   - component: {fileID: 1992210237}
+  - component: {fileID: 1992210239}
+  - component: {fileID: 1992210240}
   m_Layer: 5
   m_Name: SphereSlot
   m_TagString: Untagged
@@ -6486,6 +6608,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992210235}
   m_CullTransparentMesh: 1
+--- !u!114 &1992210239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992210235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 1628158122}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1992210240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992210235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ea9a746b13dbc48b19ed1f88ca561a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slotItem: {fileID: 1239900496}
+  itemPrefab: {fileID: 8998775133104890587, guid: b25ace4ce88b397468b4d07a43b4d064, type: 3}
 --- !u!1 &2032707771
 GameObject:
   m_ObjectHideFlags: 0
@@ -7139,9 +7319,21 @@ PrefabInstance:
       value: CollectableItem
       objectReference: {fileID: 0}
     - target: {fileID: 1855986409476597549, guid: 73dde4b875a730a4e964815a54cb747d, type: 3}
+      propertyPath: itemSlot
+      value: 
+      objectReference: {fileID: 52625187}
+    - target: {fileID: 1855986409476597549, guid: 73dde4b875a730a4e964815a54cb747d, type: 3}
+      propertyPath: CollectedObject
+      value: 
+      objectReference: {fileID: 379431325}
+    - target: {fileID: 1855986409476597549, guid: 73dde4b875a730a4e964815a54cb747d, type: 3}
       propertyPath: collectedObject
       value: 
       objectReference: {fileID: 379431325}
+    - target: {fileID: 1855986409476597551, guid: 73dde4b875a730a4e964815a54cb747d, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73dde4b875a730a4e964815a54cb747d, type: 3}
 --- !u!1001 &2063795613835038423
@@ -7152,9 +7344,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 1970683189}
     m_Modifications:
     - target: {fileID: 2063795614681925333, guid: 1a3a0cd61e048064c92f9615bba40e38, type: 3}
+      propertyPath: itemSlot
+      value: 
+      objectReference: {fileID: 1628158124}
+    - target: {fileID: 2063795614681925333, guid: 1a3a0cd61e048064c92f9615bba40e38, type: 3}
+      propertyPath: CollectedObject
+      value: 
+      objectReference: {fileID: 1424475928}
+    - target: {fileID: 2063795614681925333, guid: 1a3a0cd61e048064c92f9615bba40e38, type: 3}
       propertyPath: collectedObject
       value: 
       objectReference: {fileID: 1424475928}
+    - target: {fileID: 2063795614681925335, guid: 1a3a0cd61e048064c92f9615bba40e38, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2063795614681925930, guid: 1a3a0cd61e048064c92f9615bba40e38, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -7261,8 +7465,20 @@ PrefabInstance:
       value: CollectableItem
       objectReference: {fileID: 0}
     - target: {fileID: 8998775133104890597, guid: b25ace4ce88b397468b4d07a43b4d064, type: 3}
+      propertyPath: itemSlot
+      value: 
+      objectReference: {fileID: 1992210239}
+    - target: {fileID: 8998775133104890597, guid: b25ace4ce88b397468b4d07a43b4d064, type: 3}
+      propertyPath: CollectedObject
+      value: 
+      objectReference: {fileID: 1239900496}
+    - target: {fileID: 8998775133104890597, guid: b25ace4ce88b397468b4d07a43b4d064, type: 3}
       propertyPath: collectedObject
       value: 
       objectReference: {fileID: 1239900496}
+    - target: {fileID: 8998775133104890599, guid: b25ace4ce88b397468b4d07a43b4d064, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b25ace4ce88b397468b4d07a43b4d064, type: 3}

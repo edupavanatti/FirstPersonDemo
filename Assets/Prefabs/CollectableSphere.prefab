@@ -127,5 +127,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17415e8046cf0874e997a31801d8358b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectedObject: {fileID: 0}
   defaultMaterial: {fileID: 2100000, guid: 6936268e450b9204fa9ebf7f9350d791, type: 2}
   selectedMaterial: {fileID: 2100000, guid: 04c4cdec20ce8da42a14b224506daf17, type: 2}

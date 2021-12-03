@@ -16,5 +16,10 @@ public class PlayerMovement : MonoBehaviour
 
         var movement = transform.right * inputX + transform.forward * inputZ;
         playerController.Move(movement * _playerSpeed * Time.deltaTime);
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 }
